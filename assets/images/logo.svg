@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 180" width="100%" height="100%">
+  <defs>
+    <!-- Metallic Gold Gradients -->
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5C0" />
+      <stop offset="25%" stop-color="#D4AF37" />
+      <stop offset="50%" stop-color="#FBF5B7" />
+      <stop offset="75%" stop-color="#AA771C" />
+      <stop offset="100%" stop-color="#805A19" />
+    </linearGradient>
+
+    <linearGradient id="goldShine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF0" />
+      <stop offset="30%" stop-color="#ECC856" />
+      <stop offset="70%" stop-color="#B8860B" />
+      <stop offset="100%" stop-color="#6E4E03" />
+    </linearGradient>
+
+    <linearGradient id="goldBevel" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8C6510" />
+      <stop offset="35%" stop-color="#E5C158" />
+      <stop offset="60%" stop-color="#FFFDE0" />
+      <stop offset="100%" stop-color="#996D13" />
+    </linearGradient>
+
+    <!-- Ruby Red Jewel Gradient -->
+    <radialGradient id="rubyRed" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FF5252" />
+      <stop offset="40%" stop-color="#E60000" />
+      <stop offset="85%" stop-color="#8B0000" />
+      <stop offset="100%" stop-color="#3D0000" />
+    </radialGradient>
+
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#D4AF37" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Filters -->
+    <filter id="luxuryShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+    <filter id="goldGlowFilter" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow Behind Emblem -->
+  <circle cx="95" cy="90" r="75" fill="url(#goldGlow)" />
+
+  <!-- EMBLEM ICON (LEFT SIDE) -->
+  <g transform="translate(15, 10)" filter="url(#luxuryShadow)">
+    <!-- Automotive Dynamic Wings / Speed Arc -->
+    <path d="M 20,115 C 45,135 115,135 140,115 C 105,123 55,123 20,115 Z" fill="url(#goldBevel)" />
+    <path d="M 10,95 C 40,120 120,120 150,95 C 115,108 45,108 10,95 Z" fill="url(#goldShine)" opacity="0.85" />
+    
+    <!-- Sleek Grill / Front Shield Accent -->
+    <path d="M 45,115 L 115,115 L 105,138 C 92,148 68,148 55,138 Z" fill="url(#goldLight)" stroke="#523906" stroke-width="1.2" />
+    <!-- Grill Vertical Fins -->
+    <line x1="65" y1="117" x2="68" y2="137" stroke="#3D2900" stroke-width="1.5" />
+    <line x1="80" y1="117" x2="80" y2="142" stroke="#3D2900" stroke-width="1.8" />
+    <line x1="95" y1="117" x2="92" y2="137" stroke="#3D2900" stroke-width="1.5" />
+
+    <!-- Royal Crown Base -->
+    <path d="M 40,88 C 65,95 95,95 120,88 L 124,105 C 95,112 65,112 36,105 Z" fill="url(#goldBevel)" stroke="#FFF5C0" stroke-width="0.8" />
+    
+    <!-- Crown Base Filigree / Diamonds -->
+    <circle cx="50" cy="98" r="3.5" fill="url(#rubyRed)" stroke="#FFD700" stroke-width="1" />
+    <circle cx="65" cy="100" r="2.8" fill="#FFFDF0" />
+    <circle cx="80" cy="101" r="4.5" fill="url(#rubyRed)" stroke="#FFD700" stroke-width="1.2" />
+    <circle cx="95" cy="100" r="2.8" fill="#FFFDF0" />
+    <circle cx="110" cy="98" r="3.5" fill="url(#rubyRed)" stroke="#FFD700" stroke-width="1" />
+
+    <!-- Crown Peaks / Spikes -->
+    <!-- Outer Left Peak -->
+    <path d="M 38,88 L 32,55 L 50,75 L 58,89 Z" fill="url(#goldLight)" />
+    <!-- Mid Left Peak -->
+    <path d="M 52,76 L 58,45 L 72,78 Z" fill="url(#goldShine)" />
+    <!-- Center Royal Peak -->
+    <path d="M 68,78 L 80,32 L 92,78 Z" fill="url(#goldBevel)" />
+    <!-- Mid Right Peak -->
+    <path d="M 88,78 L 102,45 L 108,76 Z" fill="url(#goldShine)" />
+    <!-- Outer Right Peak -->
+    <path d="M 102,89 L 110,75 L 128,55 L 122,88 Z" fill="url(#goldLight)" />
+
+    <!-- Crown Jewels on Peaks -->
+    <circle cx="32" cy="53" r="4.5" fill="url(#rubyRed)" stroke="#FFD700" stroke-width="1" />
+    <circle cx="58" cy="43" r="5" fill="#FFF5C0" stroke="#AA771C" stroke-width="1" />
+    <!-- Center Top Star Jewel -->
+    <g transform="translate(80, 29)">
+      <circle cx="0" cy="0" r="6.5" fill="url(#rubyRed)" stroke="#FFF" stroke-width="1.2" />
+      <polygon points="0,-10 2,-4 8,-2 3,2 5,8 0,4 -5,8 -3,2 -8,-2 -2,-4" fill="url(#goldLight)" />
+    </g>
+    <circle cx="102" cy="43" r="5" fill="#FFF5C0" stroke="#AA771C" stroke-width="1" />
+    <circle cx="128" cy="53" r="4.5" fill="url(#rubyRed)" stroke="#FFD700" stroke-width="1" />
+
+    <!-- Automotive Sweeping Headlight Beams (Subtle VIP lines) -->
+    <path d="M 18,72 Q 40,60 70,62" fill="none" stroke="url(#goldLight)" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+    <path d="M 142,72 Q 120,60 90,62" fill="none" stroke="url(#goldLight)" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+  </g>
+
+  <!-- BRAND NAME & CALLIGRAPHY (RIGHT SIDE - ARABIC & ENGLISH) -->
+  <g transform="translate(195, 20)" filter="url(#luxuryShadow)">
+    
+    <!-- Top Royal Badge / Stars -->
+    <g transform="translate(190, 18)">
+      <polygon points="0,-5 1.5,-1.5 5,-1.5 2.2,0.8 3.3,4.2 0,2 -3.3,4.2 -2.2,0.8 -5,-1.5 -1.5,-1.5" fill="url(#goldLight)" />
+      <polygon points="-22,-5 -20.5,-1.5 -17,-1.5 -19.8,0.8 -18.7,4.2 -22,2 -25.3,4.2 -24.2,0.8 -27,-1.5 -23.5,-1.5" fill="url(#goldLight)" opacity="0.85" />
+      <polygon points="22,-5 23.5,-1.5 27,-1.5 24.2,0.8 25.3,4.2 22,2 18.7,4.2 19.8,0.8 17,-1.5 20.5,-1.5" fill="url(#goldLight)" opacity="0.85" />
+      <line x1="-120" y1="0" x2="-35" y2="0" stroke="url(#goldLight)" stroke-width="1.2" opacity="0.7" />
+      <line x1="35" y1="0" x2="120" y2="0" stroke="url(#goldLight)" stroke-width="1.2" opacity="0.7" />
+    </g>
+
+    <!-- Main Title: السلطان (Arabic Typography) -->
+    <text x="190" y="78" text-anchor="middle" font-family="'Cairo', 'Tajawal', 'Amiri', 'Traditional Arabic', sans-serif" font-weight="900" font-size="52" fill="url(#goldLight)" letter-spacing="1">
+      الســلـطـان
+    </text>
+
+    <!-- Secondary Arabic Tagline -->
+    <text x="190" y="105" text-anchor="middle" font-family="'Cairo', 'Tajawal', sans-serif" font-weight="700" font-size="14" fill="#FFFFFF" letter-spacing="2">
+      لخدمات الليموزين والزفاف ورجال الأعمال
+    </text>
+
+    <!-- Decorative Gold Divider Line -->
+    <g transform="translate(190, 118)">
+      <line x1="-160" y1="0" x2="160" y2="0" stroke="url(#goldShine)" stroke-width="1.5" />
+      <polygon points="0,-4 4,0 0,4 -4,0" fill="#E60000" stroke="#FFD700" stroke-width="1" />
+      <circle cx="-40" cy="0" r="2" fill="#FFD700" />
+      <circle cx="40" cy="0" r="2" fill="#FFD700" />
+    </g>
+
+    <!-- Subtitle: English Luxury Brand -->
+    <text x="190" y="138" text-anchor="middle" font-family="'Montserrat', 'Cinzel', 'Segoe UI', sans-serif" font-weight="700" font-size="11.5" fill="url(#goldBevel)" letter-spacing="4.5">
+      EL-SULTAN LIMOUSINE &amp; VIP SERVICES
+    </text>
+  </g>
+</svg>
