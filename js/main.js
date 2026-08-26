@@ -148,6 +148,14 @@ function initBookingEngine() {
   const vehicleInput = document.getElementById('booking-vehicle');
   const dateInput = document.getElementById('booking-date');
   const timeInput = document.getElementById('booking-time');
+  
+  // Wedding Itinerary Stops
+  const barberInput = document.getElementById('booking-barber');
+  const salonInput = document.getElementById('booking-salon');
+  const sessionLocInput = document.getElementById('booking-session-loc');
+  const hallInput = document.getElementById('booking-hall');
+  const homeInput = document.getElementById('booking-home');
+
   const pickupInput = document.getElementById('booking-pickup');
   const dropoffInput = document.getElementById('booking-dropoff');
   const notesInput = document.getElementById('booking-notes');
@@ -162,9 +170,19 @@ function initBookingEngine() {
     const vehicle = vehicleInput?.options[vehicleInput.selectedIndex]?.text || (currentLang === 'ar' ? 'سيارة حسب الاختيار' : 'Selected Vehicle');
     const date = dateInput?.value || (currentLang === 'ar' ? 'في أقرب وقت' : 'As soon as possible');
     const time = timeInput?.value || (currentLang === 'ar' ? 'غير محدد' : 'Not specified');
+    
+    // Itinerary values
+    const barber = barberInput?.value.trim() || (currentLang === 'ar' ? 'غير محدد' : 'Not specified');
+    const salon = salonInput?.value.trim() || (currentLang === 'ar' ? 'غير محدد' : 'Not specified');
+    const sessionLoc = sessionLocInput?.value.trim() || (currentLang === 'ar' ? 'غير محدد' : 'Not specified');
+    const hall = hallInput?.value.trim() || (currentLang === 'ar' ? 'غير محدد' : 'Not specified');
+    const home = homeInput?.value.trim() || (currentLang === 'ar' ? 'غير محدد' : 'Not specified');
+
     const pickup = pickupInput?.value.trim() || (currentLang === 'ar' ? 'غير محدد' : 'Not specified');
     const dropoff = dropoffInput?.value.trim() || (currentLang === 'ar' ? 'غير محدد' : 'Not specified');
     const notes = notesInput?.value.trim() || (currentLang === 'ar' ? 'لا توجد ملاحظات إضافية' : 'No extra notes');
+
+    const hasItinerary = barberInput?.value.trim() || salonInput?.value.trim() || sessionLocInput?.value.trim() || hallInput?.value.trim() || homeInput?.value.trim() || service.includes('زفاف') || service.includes('Wedding');
 
     let text = '';
     if (currentLang === 'ar') {
@@ -175,9 +193,19 @@ function initBookingEngine() {
 💎 *نوع الخدمة:* ${service}
 🚗 *السيارة المطلوبة:* ${vehicle}
 📅 *تاريخ المشوار:* ${date}
-⏰ *الوقت المطلوب:* ${time}
-📍 *مكان الانطلاق:* ${pickup}
-🏁 *مكان الوصول:* ${dropoff}
+⏰ *الوقت المطلوب:* ${time}`;
+
+      if (hasItinerary) {
+        text += `\n\n🗺️ *خط سير الزفة (المطلوب من العريس):*
+💈 *الحلاق:* ${barber}
+💄 *الكوافير / البيوتي سنتر:* ${salon}
+📸 *مكان السيشن:* ${sessionLoc}
+🏰 *مكان القاعة:* ${hall}
+🏠 *مكان البيت:* ${home}`;
+      }
+
+      text += `\n\n📍 *مكان الانطلاق الأساسي:* ${pickup}
+🏁 *مكان الوصول الأساسي:* ${dropoff}
 📝 *ملاحظات إضافية:* ${notes}
 ━━━━━━━━━━━━━━━━━━━━
 ✨ _تم إرسال الطلب عبر الموقع الإلكتروني لمكتب السلطان_ ✨`;
@@ -189,9 +217,19 @@ function initBookingEngine() {
 💎 *Service Type:* ${service}
 🚗 *Selected Vehicle:* ${vehicle}
 📅 *Trip Date:* ${date}
-⏰ *Requested Time:* ${time}
-📍 *Pickup Location:* ${pickup}
-🏁 *Destination:* ${dropoff}
+⏰ *Requested Time:* ${time}`;
+
+      if (hasItinerary) {
+        text += `\n\n🗺️ *Wedding Convoy Itinerary (From Groom):*
+💈 *Groom Barber:* ${barber}
+💄 *Bridal Beauty Salon:* ${salon}
+📸 *Photoshoot Location:* ${sessionLoc}
+🏰 *Wedding Hall / Venue:* ${hall}
+🏠 *Home Location:* ${home}`;
+      }
+
+      text += `\n\n📍 *Main Pickup Location:* ${pickup}
+🏁 *Main Destination:* ${dropoff}
 📝 *Additional Notes:* ${notes}
 ━━━━━━━━━━━━━━━━━━━━
 ✨ _Sent via El-Sultan Limousine Official Website_ ✨`;
@@ -203,7 +241,7 @@ function initBookingEngine() {
     return text;
   };
 
-  const inputs = [nameInput, phoneInput, serviceInput, vehicleInput, dateInput, timeInput, pickupInput, dropoffInput, notesInput];
+  const inputs = [nameInput, phoneInput, serviceInput, vehicleInput, dateInput, timeInput, barberInput, salonInput, sessionLocInput, hallInput, homeInput, pickupInput, dropoffInput, notesInput];
   inputs.forEach(input => {
     if (input) {
       input.addEventListener('input', window.generateWhatsAppMessage);

@@ -1235,11 +1235,68 @@
               </div>
             </div>
 
+            <!-- Wedding Day Itinerary Stops (المطلوب من العريس) -->
+            <div class="p-4 sm:p-5 rounded-2xl bg-dark-750/95 border border-gold-500/30 shadow-lg space-y-4">
+              <div class="flex items-center justify-between border-b border-gold-500/20 pb-2.5">
+                <div class="flex items-center gap-2 text-gold-300 font-extrabold text-sm sm:text-base">
+                  <i class="fa-solid fa-route text-ruby-500 text-lg animate-pulse"></i>
+                  <span data-i18n="itinerarySectionTitle">💍 خط سير الزفة المطلوب من العريس:</span>
+                </div>
+                <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-gold-500/20 text-gold-300 font-bold border border-gold-500/30">موكب الزفاف</span>
+              </div>
+              
+              <p class="text-xs text-slate-400 leading-relaxed" data-i18n="itinerarySectionDesc">
+                يرجى تحديد محطات موكب الزفاف بدقة لترتيب الوقت وتجهيز خط السير:
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                <!-- 1. Barber -->
+                <div>
+                  <label class="block text-xs font-bold text-slate-200 mb-1" data-i18n="barberLabel">
+                    💈 مكان الحلاق (العريس)
+                  </label>
+                  <input type="text" id="booking-barber" placeholder="مثال: اسم صالون الحلاقة وعنوانه" data-i18n-placeholder="barberPlaceholder" class="luxury-input text-sm py-2.5" />
+                </div>
+
+                <!-- 2. Salon / Beauty Center -->
+                <div>
+                  <label class="block text-xs font-bold text-slate-200 mb-1" data-i18n="salonLabel">
+                    💄 مكان الكوافير / البيوتي سنتر (العروسة)
+                  </label>
+                  <input type="text" id="booking-salon" placeholder="مثال: اسم ومكان بيوتي سنتر العروسة" data-i18n-placeholder="salonPlaceholder" class="luxury-input text-sm py-2.5" />
+                </div>
+
+                <!-- 3. Photoshoot Location -->
+                <div>
+                  <label class="block text-xs font-bold text-slate-200 mb-1" data-i18n="sessionLocLabel">
+                    📸 مكان السيشن / الفوتوسيشن
+                  </label>
+                  <input type="text" id="booking-session-loc" placeholder="مثال: اسم الحديقة أو الاستوديو المفتوح" data-i18n-placeholder="sessionLocPlaceholder" class="luxury-input text-sm py-2.5" />
+                </div>
+
+                <!-- 4. Wedding Hall -->
+                <div>
+                  <label class="block text-xs font-bold text-slate-200 mb-1" data-i18n="hallLabel">
+                    🏰 مكان قاعة الفرح
+                  </label>
+                  <input type="text" id="booking-hall" placeholder="مثال: اسم ومكان قاعة الأفراح" data-i18n-placeholder="hallPlaceholder" class="luxury-input text-sm py-2.5" />
+                </div>
+              </div>
+
+              <!-- 5. Home Location -->
+              <div>
+                <label class="block text-xs font-bold text-slate-200 mb-1" data-i18n="homeLabel">
+                  🏠 مكان البيت (الانطلاق أو التوصيل النهائي)
+                </label>
+                <input type="text" id="booking-home" placeholder="مثال: عنوان منزل العريس / العروسة" data-i18n-placeholder="homePlaceholder" class="luxury-input text-sm py-2.5" />
+              </div>
+            </div>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <!-- Pickup -->
               <div>
                 <label class="block text-sm font-bold text-slate-200 mb-1.5" data-i18n="pickupLabel">
-                  مكان الانطلاق (من) *
+                  مكان الانطلاق الأساسي (من) *
                 </label>
                 <input type="text" id="booking-pickup" placeholder="مثال: طنطا - شارع حسن رضوان" data-i18n-placeholder="pickupPlaceholder" class="luxury-input" />
               </div>
@@ -1247,7 +1304,7 @@
               <!-- Dropoff -->
               <div>
                 <label class="block text-sm font-bold text-slate-200 mb-1.5" data-i18n="dropoffLabel">
-                  مكان الوصول (إلى) *
+                  مكان الوصول الأساسي (إلى) *
                 </label>
                 <input type="text" id="booking-dropoff" placeholder="مثال: مطار القاهرة الدولي / قاعة أفراح" data-i18n-placeholder="dropoffPlaceholder" class="luxury-input" />
               </div>
