@@ -26,7 +26,7 @@ const translations = {
     heroMotto: "💣 شعارنا: هتفرح هتفرح! 💣",
     heroDesc: "فخامة، راحة، وأمان في كل مشوار. أسطول ملكي متكامل من أفخم سيارات الليموزين والكابورليه المكشوفة وسيارات كبار الشخصيات ورحلات المطارات والسفريات بأسعار منافسة وخدمة VIP.",
     heroBtnWhatsapp: "احجز سيارتك الآن عبر الواتساب",
-    heroBtnFleet: "تصفح أسطول السيارات (21 سيارة)",
+    heroBtnFleet: "تصفح أسطول السيارات (26 سيارة)",
     heroBadge1: "سيارات مكيفة بالكامل",
     heroBadge2: "سائقون محترفون بزي موحد",
     heroBadge3: "التزام صارم بالدقيقة",
@@ -61,10 +61,10 @@ const translations = {
     s4Btn: "احجز مشوار المطار",
 
     // Fleet
-    fleetBadge: "21 سيارة متوفرة وجاهزة",
+    fleetBadge: "26 سيارة متوفرة وجاهزة",
     fleetTitle: "أسطول سيارات السلطان الفاخر",
     fleetDesc: "جميع السيارات مصورة واقعياً ومجهزة بأعلى تجهيزات الفخامة والتكييف ونظافة فائقة لضمان يوم استثنائي ومشوار لا يُنسى.",
-    tabAll: "جميع السيارات (21)",
+    tabAll: "جميع السيارات (26)",
     tabStretch: "استرتش ليموزين ملكي",
     tabCabrio: "كابورليه مكشوفة & سيشن",
     tabMercedes: "مرسيدس & مايباخ VIP",
@@ -204,7 +204,7 @@ const translations = {
     heroMotto: "💣 Our Motto: Pure Joy & Royal Luxury! 💣",
     heroDesc: "Luxury, comfort, and safety in every journey. A complete royal fleet of stretch limousines, convertibles, VIP executive cars, and airport transfer vehicles at competitive rates with VIP service.",
     heroBtnWhatsapp: "Book Your Car Now via WhatsApp",
-    heroBtnFleet: "Browse Fleet (21 Vehicles)",
+    heroBtnFleet: "Browse Fleet (26 Vehicles)",
     heroBadge1: "Fully Air Conditioned",
     heroBadge2: "Uniformed Professional Chauffeurs",
     heroBadge3: "Strict Punctuality Guarantee",
@@ -239,10 +239,10 @@ const translations = {
     s4Btn: "Book Airport Trip",
 
     // Fleet
-    fleetBadge: "21 Vehicles Ready & Available",
+    fleetBadge: "26 Vehicles Ready & Available",
     fleetTitle: "El-Sultan Royal Fleet Showcase",
     fleetDesc: "All vehicles are photographed in real-life, meticulously detailed, sanitized, and equipped with maximum luxury and climate control.",
-    tabAll: "All Vehicles (21)",
+    tabAll: "All Vehicles (26)",
     tabStretch: "Royal Stretch Limousines",
     tabCabrio: "Convertibles & Photoshoot",
     tabMercedes: "Mercedes & Maybach VIP",

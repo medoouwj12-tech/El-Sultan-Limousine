@@ -160,7 +160,7 @@
         <i class="fa-solid fa-fire text-ruby-500"></i>
         <span data-i18n="navOffers">العروض الخاصة</span>
       </a>
-      <a href="#fleet" class="mobile-nav-link block py-2 text-slate-200 hover:text-gold-400 border-b border-white/5" data-i18n="navFleet">أسطول السيارات (21 سيارة)</a>
+      <a href="#fleet" class="mobile-nav-link block py-2 text-slate-200 hover:text-gold-400 border-b border-white/5" data-i18n="navFleet">أسطول السيارات (26 سيارة)</a>
       <a href="#booking-section" class="mobile-nav-link block py-2 text-slate-200 hover:text-gold-400 border-b border-white/5" data-i18n="navBooking">نظام الحجز الفوري</a>
       <a href="#location" class="mobile-nav-link block py-2 text-slate-200 hover:text-gold-400" data-i18n="navLocation">العنوان والخريطة</a>
       
@@ -225,7 +225,7 @@
 
         <a href="#fleet" class="btn-outline-gold w-full sm:w-auto px-8 py-4 rounded-xl text-lg font-bold flex items-center justify-center gap-3">
           <i class="fa-solid fa-car text-gold-400"></i>
-          <span data-i18n="heroBtnFleet">تصفح أسطول السيارات (21 سيارة)</span>
+          <span data-i18n="heroBtnFleet">تصفح أسطول السيارات (26 سيارة)</span>
         </a>
       </div>
 
@@ -425,7 +425,7 @@
       <div class="text-center space-y-3 mb-8">
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-dark-800 border border-gold-500/40">
           <i class="fa-solid fa-car-side text-gold-400"></i>
-          <span id="visible-fleet-count" class="text-xs md:text-sm font-bold text-gold-300" data-i18n="fleetBadge">21 سيارة متوفرة وجاهزة</span>
+          <span id="visible-fleet-count" class="text-xs md:text-sm font-bold text-gold-300" data-i18n="fleetBadge">26 سيارة متوفرة وجاهزة</span>
         </div>
         <h2 class="text-3xl sm:text-5xl font-extrabold text-white" data-i18n="fleetTitle">
           أسطول سيارات السلطان الفاخر
@@ -438,7 +438,7 @@
 
       <!-- Interactive Filter Tabs -->
       <div class="flex items-center justify-start sm:justify-center gap-2 sm:gap-3 overflow-x-auto pb-4 mb-10 no-scrollbar">
-        <button class="filter-tab active" data-filter="all" data-i18n="tabAll">جميع السيارات (21)</button>
+        <button class="filter-tab active" data-filter="all" data-i18n="tabAll">جميع السيارات (26)</button>
         <button class="filter-tab" data-filter="stretch" data-i18n="tabStretch">استرتش ليموزين ملكي</button>
         <button class="filter-tab" data-filter="cabrio" data-i18n="tabCabrio">كابورليه مكشوفة & سيشن</button>
         <button class="filter-tab" data-filter="mercedes-maybach" data-i18n="tabMercedes">مرسيدس & مايباخ VIP</button>
@@ -446,7 +446,7 @@
         <button class="filter-tab" data-filter="sedan-suv" data-i18n="tabSedan">سيدان & SUV حديثة</button>
       </div>
 
-      <!-- Fleet Cards Grid (All 21 Real Vehicles) -->
+      <!-- Fleet Cards Grid (All 26 Real Vehicles) -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="fleet-grid">
         
         <!-- 1. Chrysler 300 Stretch Limousine -->
@@ -607,6 +607,39 @@
               <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-wand-magic-sparkles text-ruby-400 ml-1"></i> باقة تزيين كاملة</span>
             </div>
             <button onclick="window.selectCarForBooking('مرسيدس مايباخ رويال إليجانس', 'خدمات الزفاف والزفة')" class="w-full btn-gold py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span data-i18n="bookThisCar">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mercedes-Maybach S-Class Two-Tone Gold & Black VIP -->
+        <div class="vip-card vehicle-card" data-category="mercedes-maybach wedding vip">
+          <div class="vehicle-img-wrapper h-60 relative cursor-pointer" onclick="openLightbox('assets/images/fleet/mercedes-maybach-twotone-gold-black.jpg', 'مرسيدس مايباخ S-Class لونين جولد مع أسود VIP', 'مرسيدس مايباخ الفئة S بتصميم استثنائي بلونين ذهبي مع أسود ملكي ملوكي وجنوط مايباخ الذهبية المميزة ومزينة لزفاف أسطوري أمام مقر السلطان.', 'مرسيدس مايباخ جولد وأسود VIP')">
+            <img src="assets/images/fleet/mercedes-maybach-twotone-gold-black.jpg" alt="مرسيدس مايباخ S-Class لونين جولد مع أسود" class="w-full h-full object-cover" />
+            <div class="absolute top-3 right-3 flex gap-2">
+              <span class="badge-tag bg-gold-500 text-black font-extrabold border-none">👑 مايباخ جولد رويال</span>
+            </div>
+            <div class="absolute bottom-3 left-3">
+              <span class="p-2 rounded-lg bg-black/60 text-white text-xs backdrop-blur-md hover:bg-gold-500 hover:text-black transition-colors">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> <span data-i18n="zoomText">تكبير الصورة</span>
+              </span>
+            </div>
+          </div>
+          <div class="p-5 space-y-4">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-xl font-bold text-white">مرسيدس مايباخ S-Class جولد & أسود</h3>
+                <span class="text-xs text-gold-400 font-cinzel tracking-wider">Mercedes-Maybach Two-Tone Gold & Black</span>
+              </div>
+              <span class="text-xs px-2.5 py-1 rounded bg-dark-700 text-slate-300 font-bold">إصدار ملكي خاص</span>
+            </div>
+            <div class="flex flex-wrap gap-2 text-xs text-slate-300">
+              <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-crown text-gold-400 ml-1"></i> فخامة مطلقة VIP</span>
+              <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-gem text-blue-400 ml-1"></i> جنوط مايباخ جولد أصلية</span>
+              <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-wand-magic-sparkles text-ruby-400 ml-1"></i> تزيين ورد عالي المستوى</span>
+            </div>
+            <button onclick="window.selectCarForBooking('مرسيدس مايباخ جولد وأسود VIP', 'خدمات الزفاف والزفة')" class="w-full btn-gold py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2">
               <i class="fa-brands fa-whatsapp text-lg"></i>
               <span data-i18n="bookThisCar">احجز هذه السيارة</span>
             </button>
@@ -805,6 +838,72 @@
           </div>
         </div>
 
+        <!-- Mercedes-Benz C-Class AMG Grey Wedding -->
+        <div class="vip-card vehicle-card" data-category="mercedes-maybach wedding">
+          <div class="vehicle-img-wrapper h-60 relative cursor-pointer" onclick="openLightbox('assets/images/fleet/mercedes-c-class-amg-grey-wedding.jpg', 'مرسيدس C-Class AMG رمادي فيراني زفاف', 'مرسيدس C-Class AMG Line باللون الرمادي الفيراني الميتاليك بشبكة بانامريكانا الرياضية وجنوط AMG ومزينة ببوكيه ورد طبيعي فخم للزفاف.', 'مرسيدس C-Class AMG رمادي فيراني')">
+            <img src="assets/images/fleet/mercedes-c-class-amg-grey-wedding.jpg" alt="مرسيدس C-Class AMG رمادي فيراني" class="w-full h-full object-cover" />
+            <div class="absolute top-3 right-3 flex gap-2">
+              <span class="badge-tag bg-slate-700 text-white font-bold border border-gold-500/40">🔥 AMG بانامريكانا</span>
+            </div>
+            <div class="absolute bottom-3 left-3">
+              <span class="p-2 rounded-lg bg-black/60 text-white text-xs backdrop-blur-md hover:bg-gold-500 hover:text-black transition-colors">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> <span data-i18n="zoomText">تكبير الصورة</span>
+              </span>
+            </div>
+          </div>
+          <div class="p-5 space-y-4">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-xl font-bold text-white">مرسيدس C-Class AMG (رمادي فيراني)</h3>
+                <span class="text-xs text-gold-400 font-cinzel tracking-wider">Mercedes-Benz C-Class AMG Grey</span>
+              </div>
+              <span class="text-xs px-2.5 py-1 rounded bg-dark-700 text-slate-300 font-bold">سبورت & زفاف</span>
+            </div>
+            <div class="flex flex-wrap gap-2 text-xs text-slate-300">
+              <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-car text-gold-400 ml-1"></i> شبكة Panamericana GT</span>
+              <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-sun text-yellow-400 ml-1"></i> فتحة سقف بانوراما</span>
+              <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-snowflake text-cyan-400 ml-1"></i> تكييف فائق القوة</span>
+            </div>
+            <button onclick="window.selectCarForBooking('مرسيدس C-Class AMG رمادي فيراني', 'خدمات الزفاف والزفة')" class="w-full btn-gold py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span data-i18n="bookThisCar">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mercedes-Benz C-Class Exclusive Classic Black -->
+        <div class="vip-card vehicle-card" data-category="mercedes-maybach wedding vip">
+          <div class="vehicle-img-wrapper h-60 relative cursor-pointer" onclick="openLightbox('assets/images/fleet/mercedes-c-class-exclusive-black.jpg', 'مرسيدس C-Class إكسكلوسيف كلاسيك أسود ملوكي', 'مرسيدس سي كلاس الفئة الحصرية Exclusive باللون الأسود الملكي وشبكة الكروم الكلاسيكية مع النجمة البارزة وإضاءة LED ذكية لحفلات الزفاف والمشاوير الراقية.', 'مرسيدس C-Class إكسكلوسيف أسود')">
+            <img src="assets/images/fleet/mercedes-c-class-exclusive-black.jpg" alt="مرسيدس C-Class إكسكلوسيف أسود ملوكي" class="w-full h-full object-cover" />
+            <div class="absolute top-3 right-3 flex gap-2">
+              <span class="badge-tag bg-dark-800 text-gold-400 font-extrabold border border-gold-500/50">⭐ إكسكلوسيف كلاسيك</span>
+            </div>
+            <div class="absolute bottom-3 left-3">
+              <span class="p-2 rounded-lg bg-black/60 text-white text-xs backdrop-blur-md hover:bg-gold-500 hover:text-black transition-colors">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> <span data-i18n="zoomText">تكبير الصورة</span>
+              </span>
+            </div>
+          </div>
+          <div class="p-5 space-y-4">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-xl font-bold text-white">مرسيدس C-Class إكسكلوسيف (أسود)</h3>
+                <span class="text-xs text-gold-400 font-cinzel tracking-wider">Mercedes-Benz C-Class Exclusive Black</span>
+              </div>
+              <span class="text-xs px-2.5 py-1 rounded bg-dark-700 text-slate-300 font-bold">نجمة كلاسيكية</span>
+            </div>
+            <div class="flex flex-wrap gap-2 text-xs text-slate-300">
+              <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-star text-gold-400 ml-1"></i> نجمة مرسيدس البارزة</span>
+              <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-lightbulb text-yellow-400 ml-1"></i> إضاءة LED High-Performance</span>
+              <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-couch text-purple-400 ml-1"></i> صالون داخلي فخم ومريح</span>
+            </div>
+            <button onclick="window.selectCarForBooking('مرسيدس C-Class إكسكلوسيف أسود', 'خدمات الزفاف والزفة')" class="w-full btn-outline-gold py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span data-i18n="bookThisCar">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
         <!-- 12. Soueast 09 (7 Seater) VIP Luxury -->
         <div class="vip-card vehicle-card" data-category="seven-seater airport">
           <div class="vehicle-img-wrapper h-60 relative cursor-pointer" onclick="openLightbox('assets/images/fleet/soueast-09-blue.jpg', 'سويست Soueast 09 VIP فخامة 7 مقاعد', 'سيارة Soueast 09 الفاخرة ذات الـ 7 مقاعد في صالة العرض مخصصة لرحلات المطارات واستقبال القادمين من السفر والرحلات العائلية.', 'سويست 09 VIP (7 مقاعد)')">
@@ -869,6 +968,39 @@
           </div>
         </div>
 
+        <!-- Soueast S09 Luxury SUV White Wedding (7 Seater) -->
+        <div class="vip-card vehicle-card" data-category="seven-seater wedding sedan-suv">
+          <div class="vehicle-img-wrapper h-60 relative cursor-pointer" onclick="openLightbox('assets/images/fleet/soueast-s09-white-royal-wedding.jpg', 'سويست Soueast S09 أبيض لؤلؤي زفاف ملكي (7 مقاعد)', 'سيارة سويست S09 الحديثة ذات الـ 7 مقاعد العائلية الفاخرة مزينة بإكليل ورد طبيعي أبيض وأزرق ملكي مناسبة لزفاف العروسين وسفريات المطارات VIP.', 'سويست S09 أبيض زفاف ملكي (7 مقاعد)')">
+            <img src="assets/images/fleet/soueast-s09-white-royal-wedding.jpg" alt="سويست S09 أبيض لؤلؤي زفاف ملكي" class="w-full h-full object-cover" />
+            <div class="absolute top-3 right-3 flex gap-2">
+              <span class="badge-tag bg-cyan-700 text-white font-bold border-none">💎 سويست S09 زفاف ملكي</span>
+            </div>
+            <div class="absolute bottom-3 left-3">
+              <span class="p-2 rounded-lg bg-black/60 text-white text-xs backdrop-blur-md hover:bg-gold-500 hover:text-black transition-colors">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> <span data-i18n="zoomText">تكبير الصورة</span>
+              </span>
+            </div>
+          </div>
+          <div class="p-5 space-y-4">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-xl font-bold text-white">سويست Soueast S09 زفاف ملكي (7 مقاعد)</h3>
+                <span class="text-xs text-gold-400 font-cinzel tracking-wider">Soueast S09 Luxury 7-Seater White</span>
+              </div>
+              <span class="text-xs px-2.5 py-1 rounded bg-dark-700 text-slate-300 font-bold">إكليل ورد أزرق</span>
+            </div>
+            <div class="flex flex-wrap gap-2 text-xs text-slate-300">
+              <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-users text-gold-400 ml-1"></i> سعة 7 ركاب VIP</span>
+              <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-fan text-cyan-400 ml-1"></i> تكييف مركزي متكامل</span>
+              <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-ribbon text-ruby-400 ml-1"></i> تزيين إكليل ورد ملكي</span>
+            </div>
+            <button onclick="window.selectCarForBooking('سويست S09 أبيض زفاف ملكي (7 مقاعد)', 'خدمات الزفاف والزفة')" class="w-full btn-gold py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span data-i18n="bookThisCar">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
         <!-- 14. BMW 3 Series M-Sport Red -->
         <div class="vip-card vehicle-card" data-category="sedan-suv wedding">
           <div class="vehicle-img-wrapper h-60 relative cursor-pointer" onclick="openLightbox('assets/images/fleet/bmw-3series-msport-red.jpg', 'بي إم دبليو الفئة الثالثة M-Sport أحمر ملكي', 'سيارة BMW الفئة الثالثة باقة إم سبورت باللون الأحمر الملكي مزينة ببوكيه ورد للزفاف الفاخر.', 'BMW الفئة الثالثة M-Sport أحمر')">
@@ -895,6 +1027,39 @@
               <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-wand-magic-sparkles text-ruby-400 ml-1"></i> تزيين زفاف مميز</span>
             </div>
             <button onclick="window.selectCarForBooking('BMW الفئة الثالثة M-Sport أحمر', 'خدمات الزفاف والزفة')" class="w-full btn-gold py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span data-i18n="bookThisCar">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- BMW 3-Series F30 M-Sport Silver -->
+        <div class="vip-card vehicle-card" data-category="sedan-suv wedding">
+          <div class="vehicle-img-wrapper h-60 relative cursor-pointer" onclick="openLightbox('assets/images/fleet/bmw-3series-f30-silver-sport.jpg', 'بي إم دبليو الفئة الثالثة F30 سبورت فضي ميتاليك', 'بي إم دبليو الفئة الثالثة F30 بباقة M-Performance الرياضية باللون الفضي الميتاليك وجنوط سبورت ومزينة بالورود لأقوى زفة شبابية وتصوير سيشن.', 'BMW الفئة الثالثة F30 سبورت فضي')">
+            <img src="assets/images/fleet/bmw-3series-f30-silver-sport.jpg" alt="بي إم دبليو الفئة الثالثة F30 سبورت فضي" class="w-full h-full object-cover" />
+            <div class="absolute top-3 right-3 flex gap-2">
+              <span class="badge-tag bg-blue-600 text-white font-extrabold border-none">⚡ BMW F30 سبورت</span>
+            </div>
+            <div class="absolute bottom-3 left-3">
+              <span class="p-2 rounded-lg bg-black/60 text-white text-xs backdrop-blur-md hover:bg-gold-500 hover:text-black transition-colors">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> <span data-i18n="zoomText">تكبير الصورة</span>
+              </span>
+            </div>
+          </div>
+          <div class="p-5 space-y-4">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-xl font-bold text-white">بي إم دبليو F30 سبورت (فضي ميتاليك)</h3>
+                <span class="text-xs text-gold-400 font-cinzel tracking-wider">BMW 3-Series F30 M-Sport Silver</span>
+              </div>
+              <span class="text-xs px-2.5 py-1 rounded bg-dark-700 text-slate-300 font-bold">باقة M3 الرياضية</span>
+            </div>
+            <div class="flex flex-wrap gap-2 text-xs text-slate-300">
+              <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-bolt text-yellow-400 ml-1"></i> إكصدام M3 وسبويلر</span>
+              <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-compact-disc text-gold-400 ml-1"></i> جنوط سبورت نجمة</span>
+              <span class="px-2 py-1 bg-dark-800 rounded border border-white/5"><i class="fa-solid fa-camera text-ruby-400 ml-1"></i> مثالية لسيشن الزفاف</span>
+            </div>
+            <button onclick="window.selectCarForBooking('BMW الفئة الثالثة F30 سبورت فضي', 'خدمات الزفاف والزفة')" class="w-full btn-ruby py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2">
               <i class="fa-brands fa-whatsapp text-lg"></i>
               <span data-i18n="bookThisCar">احجز هذه السيارة</span>
             </button>
@@ -1197,15 +1362,20 @@
                   <option value="مرسيدس مايباخ S-Class لونين">مرسيدس مايباخ S-Class لونين (Maybach Two-Tone)</option>
                   <option value="مرسيدس مايباخ رجال أعمال">مرسيدس مايباخ رجال أعمال (Maybach VIP)</option>
                   <option value="مرسيدس مايباخ رويال إليجانس">مرسيدس مايباخ رويال إليجانس (Maybach Elegance)</option>
+                  <option value="مرسيدس مايباخ جولد وأسود VIP">مرسيدس مايباخ جولد & أسود VIP (Maybach Gold/Black)</option>
                   <option value="مرسيدس كابورليه AMG بيضاء">مرسيدس C-Class كابورليه AMG (Mercedes Cabrio)</option>
                   <option value="مرسيدس كابورليه سيشن زفاف">مرسيدس كابورليه سيشن زفاف (Mercedes Wedding Cabrio)</option>
                   <option value="مرسيدس كوبيه بيضاء زفاف">مرسيدس C-Class كوبيه (Mercedes Coupe)</option>
+                  <option value="مرسيدس C-Class AMG رمادي فيراني">مرسيدس C-Class AMG رمادي فيراني (Mercedes AMG Grey)</option>
+                  <option value="مرسيدس C-Class إكسكلوسيف أسود">مرسيدس C-Class إكسكلوسيف أسود (Mercedes Exclusive Black)</option>
                   <option value="فورد موستانج كابورليه برتقالي">فورد موستانج كابورليه (Mustang GT Cabrio)</option>
                   <option value="شيفروليه كامارو كابورليه أصفر">شيفروليه كامارو كابورليه أصفر (Camaro Yellow)</option>
                   <option value="شيفروليه كامارو كابورليه بيضاء">شيفروليه كامارو كابورليه بيضاء (Camaro White)</option>
-                  <option value="سويست 09 VIP (7 مقاعد)">سويست Soueast 09 VIP (7-Seater White)</option>
+                  <option value="سويست 09 VIP (7 مقاعد)">سويست Soueast 09 VIP (7-Seater Blue)</option>
                   <option value="سويست 09 أبيض (7 مقاعد)">سويست Soueast 09 أبيض (7-Seater White)</option>
-                  <option value="BMW الفئة الثالثة M-Sport أحمر">بي إم دبليو M-Sport أحمر (BMW 3-Series)</option>
+                  <option value="سويست S09 أبيض زفاف ملكي (7 مقاعد)">سويست Soueast S09 زفاف ملكي 7 مقاعد (Soueast S09 White)</option>
+                  <option value="BMW الفئة الثالثة M-Sport أحمر">بي إم دبليو M-Sport أحمر (BMW 3-Series Red)</option>
+                  <option value="BMW الفئة الثالثة F30 سبورت فضي">بي إم دبليو F30 سبورت فضي (BMW 3-Series Silver)</option>
                   <option value="جيتور داشينج SUV بيضاء">جيتور داشينج SUV بيضاء (Jetour Dashing)</option>
                   <option value="إم جي وان MG ONE بيضاء">إم جي وان MG ONE بيضاء (MG ONE SUV)</option>
                   <option value="كيا سبورتاج بيضاء">كيا سبورتاج بيضاء (Kia Sportage)</option>
@@ -1424,7 +1594,7 @@
         </div>
 
         <div class="vip-card p-6">
-          <div class="text-3xl sm:text-4xl font-extrabold text-ruby-400 mb-1 counter-stat" data-target="21">21</div>
+          <div class="text-3xl sm:text-4xl font-extrabold text-ruby-400 mb-1 counter-stat" data-target="26">26</div>
           <div class="text-xs sm:text-sm font-bold text-slate-300" data-i18n="stat2Label">سيارة ليموزين وكابورليه بالأسطول</div>
         </div>
 
@@ -1729,7 +1899,7 @@
           <li><a href="#home" class="hover:text-gold-400 transition-colors" data-i18n="navHome">الرئيسية</a></li>
           <li><a href="#services" class="hover:text-gold-400 transition-colors" data-i18n="navServices">خدمات الزفاف والزفة</a></li>
           <li><a href="#offers" class="hover:text-gold-400 transition-colors text-ruby-400 font-bold" data-i18n="navOffers">العروض الخاصة بالسفر والمطارات</a></li>
-          <li><a href="#fleet" class="hover:text-gold-400 transition-colors" data-i18n="navFleet">أسطول السيارات (21 سيارة)</a></li>
+          <li><a href="#fleet" class="hover:text-gold-400 transition-colors" data-i18n="navFleet">أسطول السيارات (26 سيارة)</a></li>
           <li><a href="#booking-section" class="hover:text-gold-400 transition-colors" data-i18n="navBooking">نظام الحجز الذكي عبر الواتساب</a></li>
           <li><a href="#location" class="hover:text-gold-400 transition-colors" data-i18n="navLocation">العنوان وموقعنا في طنطا</a></li>
         </ul>
